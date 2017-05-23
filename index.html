@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    //11 some upcase lowercase some to be numbers
+    var baseUrl = "https://www.youtube.com/watch?v=";
+    var url ="";
+    var whatNumberWeOne = 10;
+    var justFoundRandomNumber = 0;
+    var rangeOfRandomNumber = 0;
+    var readyToAdd = "";
+    var readyToAddV2 = "";
+    var readyToAddV3 = "";
+    var strForRuns10To9 ="";
+    var strForRuns8To7 ="";
+    var strForRuns6To5 ="";
+    var strForRuns4To3 ="";
+    var strForRuns2To1 ="";
+    var finalStr = "";
+    var finalStr1 = "";
+    var finalStr2 = "";
+    var finalStr3 = "";
+    var finalStr4 ="";
+    function onClick() {
+        while(whatNumberWeOne >= 0) {
+            rangeOfRandomNumber = rangeOfRandomNumber - rangeOfRandomNumber;
+            rangeOfRandomNumber = rangeOfRandomNumber + 35;
+            getRandomeNumber();
+            readyToAdd = "";
+            if (rangeOfRandomNumber <= 35) {
+                if (justFoundRandomNumber == 1) {
+                    readyToAdd = readyToAdd +"a";
+                }
+                else if (justFoundRandomNumber == 2) {
+                    readyToAdd = readyToAdd +"b";
+                }
+                else if (justFoundRandomNumber == 3) {
+                    readyToAdd = readyToAdd +"c";
+                }
+                else if (justFoundRandomNumber == 4) {
+                    readyToAdd = readyToAdd +"d";
+                }
+                else if (justFoundRandomNumber == 5) {
+                    readyToAdd = readyToAdd +"e";
+                }
+                else if (justFoundRandomNumber == 6) {
+                    readyToAdd = readyToAdd +"f";
+                }
+                else if (justFoundRandomNumber == 7) {
+                    readyToAdd = readyToAdd +"g";
+                }
+                else if (justFoundRandomNumber == 8) {
+                    readyToAdd = readyToAdd +"h";
+                }
+                else if (justFoundRandomNumber == 9) {
+                    readyToAdd = readyToAdd +"i";
+                }
+                else if (justFoundRandomNumber == 10) {
+                    readyToAdd = readyToAdd +"j";
+                }
+                else if (justFoundRandomNumber == 11) {
+                    readyToAdd = readyToAdd +"k";
+                }
+                else if(justFoundRandomNumber == 12){
+                    readyToAdd = readyToAdd +"l";
+                }
+                else if(justFoundRandomNumber == 13){
+                    readyToAdd = readyToAdd +"m";
+                }
+                else if(justFoundRandomNumber == 14){
+                    readyToAdd = readyToAdd +"n";
+                }
+                else if(justFoundRandomNumber == 15){
+                    readyToAdd = readyToAdd +"o";
+                }
+                else if(justFoundRandomNumber == 16){
+                    readyToAdd = readyToAdd +"p";
+                }
+                else if(justFoundRandomNumber == 17){
+                    readyToAdd = readyToAdd +"q";
+                }
+                else if(justFoundRandomNumber == 18){
+                    readyToAdd = readyToAdd +"r";
+                }
+                else if(justFoundRandomNumber == 19){
+                    readyToAdd = readyToAdd +"s";
+                }
+                else if(justFoundRandomNumber == 20){
+                    readyToAdd = readyToAdd +"t";
+                }
+                else if(justFoundRandomNumber == 21){
+                    readyToAdd = readyToAdd +"u";
+                }
+                else if(justFoundRandomNumber == 22){
+                    readyToAdd = readyToAdd +"v";
+                }
+                else if(justFoundRandomNumber == 23){
+                    readyToAdd = readyToAdd +"w";
+                }
+                else if(justFoundRandomNumber == 24){
+                    readyToAdd = readyToAdd +"x";
+                }
+                else if(justFoundRandomNumber == 25){
+                    readyToAdd = readyToAdd +"y";
+                }
+                else if(justFoundRandomNumber == 26){
+                    readyToAdd = readyToAdd +"z";
+                }
+                else if(justFoundRandomNumber == 27){
+                    readyToAdd = readyToAdd +"1";
+                }
+                else if(justFoundRandomNumber == 28){
+                    readyToAdd = readyToAdd +"2";
+                }
+                else if(justFoundRandomNumber == 29){
+                    readyToAdd = readyToAdd +"3";
+                }
+                else if(justFoundRandomNumber == 30){
+                    readyToAdd = readyToAdd +"4";
+                }
+                else if(justFoundRandomNumber == 31){
+                    readyToAdd = readyToAdd +"5";
+                }
+                else if(justFoundRandomNumber == 32){
+                    readyToAdd = readyToAdd +"6";
+                }
+                else if(justFoundRandomNumber == 33){
+                    readyToAdd = readyToAdd +"7";
+                }
+                else if(justFoundRandomNumber == 34){
+                    readyToAdd = readyToAdd +"8";
+                }
+                else if(justFoundRandomNumber == 25){
+                    readyToAdd = readyToAdd +"9";
+                }
+            }
+            if(justFoundRandomNumber <=26){
+                rangeOfRandomNumber = rangeOfRandomNumber - rangeOfRandomNumber;
+                rangeOfRandomNumber = rangeOfRandomNumber + 3;
+                getRandomeNumber();
+                if(justFoundRandomNumber == 1){
+                    readyToAddV2 = readyToAdd;
+                }
+                if(justFoundRandomNumber == 2){
+                    readyToAddV2 = readyToAdd.toUpperCase();
+                }
+                if(justFoundRandomNumber == 3){
+                    readyToAddV2 = readyToAdd.toUpperCase();
+                }
+            }
+            if(justFoundRandomNumber >= 27){
+                readyToAddV2 = readyToAdd;
+            }
+            if(whatNumberWeOne == 10 ){
+                readyToAddV3 = readyToAddV2;
+            }
+            if(whatNumberWeOne == 9){
+                strForRuns10To9 = readyToAddV3.concat(readyToAdd);
+            }
+            if(whatNumberWeOne == 8){
+                readyToAddV3 = readyToAddV2;
+            }
+            if(whatNumberWeOne == 7){
+                strForRuns8To7 = readyToAddV3.concat(readyToAdd);
+            }
+            if(whatNumberWeOne == 6){
+                readyToAddV3 = readyToAddV2;
+            }
+            if(whatNumberWeOne == 5){
+                strForRuns6To5 = readyToAddV3.concat(readyToAdd);
+            }
+            if(whatNumberWeOne == 4){
+                readyToAddV3 = readyToAddV2;
+            }
+            if(whatNumberWeOne == 3){
+                strForRuns4To3 = readyToAddV3.concat(readyToAdd);
+            }
+            if(whatNumberWeOne == 2){
+                readyToAddV3 = readyToAddV2;
+            }
+            if(whatNumberWeOne == 1){
+                strForRuns2To1 = readyToAddV3.concat(readyToAdd);
+            }
+            if(whatNumberWeOne == 0){
+                finalStr = readyToAdd.concat(strForRuns10To9);
+                finalStr1 = strForRuns8To7.concat(finalStr);
+                finalStr2 = strForRuns6To5.concat(finalStr1);
+                finalStr3 = strForRuns4To3.concat(finalStr2);
+                finalStr4 = strForRuns2To1.concat(finalStr3);
+                url = "";
+                url = baseUrl.concat(finalStr4);
+            }
+                whatNumberWeOne = whatNumberWeOne - 1;
+        }
+        if(whatNumberWeOne == -1) {
+            window.location.replace(url);
+            whatNumberWeOne = whatNumberWeOne +11;
+        }
+    }
+    function getRandomeNumber() {
+        justFoundRandomNumber = justFoundRandomNumber - justFoundRandomNumber;
+        justFoundRandomNumber = justFoundRandomNumber + Math.floor((Math.random() * rangeOfRandomNumber) + 1);
+    }
+</script>
+<body>
+<button onclick="onClick()">Get random youtube video!</button>
+</body>
+</html>
